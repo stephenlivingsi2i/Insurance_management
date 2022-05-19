@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'employee',
     'insurance',
     'insurance_company',
-    'policy'
+    'policy',
+    'claim'
 ]
 
 MIDDLEWARE = [

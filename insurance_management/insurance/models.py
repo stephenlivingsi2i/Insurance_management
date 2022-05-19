@@ -3,6 +3,7 @@ from django.db import models
 
 # Create your models here.
 from employee.models import Employee
+from policy.models import Policy
 
 
 class Insurance(models.Model):
@@ -15,3 +16,4 @@ class Insurance(models.Model):
     renewal_date = models.DateField()
     issued_by = models.CharField(max_length=20)
     employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
+    policy = models.ForeignKey(Policy, on_delete=models.CASCADE, null=True)

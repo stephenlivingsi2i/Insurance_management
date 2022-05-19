@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from insurance_company.models import InsuranceCompany
+from insurance_company.models import Company
 
 
-class InsuranceCompanySerializer(serializers.ModelSerializer):
+class CompanySerializer(serializers.ModelSerializer):
     class Meta:
-        model = InsuranceCompany
+        model = Company
         fields = '__all__'

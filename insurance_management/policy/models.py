@@ -1,5 +1,5 @@
 from django.db import models
-from insurance_company.models import InsuranceCompany
+from insurance_company.models import Company
 
 
 class Policy(models.Model):
@@ -10,4 +10,4 @@ class Policy(models.Model):
     description = models.CharField(max_length=200)
     created_date = models.DateField()
     updated_date = models.DateField(auto_now=True)
-    insurance_company = models.ForeignKey(InsuranceCompany, on_delete=models.CASCADE)
+    company = models.ForeignKey(Company, on_delete=models.CASCADE)
