@@ -13,6 +13,7 @@ from insurance.serializer import InsuranceSerializer
 def create_insurance(request):
     """Create new insurance for employee and store it"""
 
+    request.data["remaining_amount"] = request.data["insurance_amount"]
     new_insurance = InsuranceSerializer(data=request.data)
     new_insurance.is_valid(raise_exception=True)
     new_insurance.save()
@@ -37,3 +38,6 @@ def update_insurance(request, insurance_id):
     if updated_insurance.is_valid(raise_exception=True):
         updated_insurance.save()
     return Response(updated_insurance.data)
+
+
+

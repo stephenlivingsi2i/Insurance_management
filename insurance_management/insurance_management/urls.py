@@ -22,5 +22,6 @@ urlpatterns = [
     path('', include('insurance_company.urls')),
     path('', include('policy.urls')),
     path('', include('claim.urls')),
+    path('', include('organization.urls')),
     path('admin/', admin.site.urls)
 ]

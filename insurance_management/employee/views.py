@@ -2,8 +2,13 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import render
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+
+from claim.models import Claim
+from claim.serializer import ClaimSerializer
 from employee.models import Employee
 from employee.serializer import EmployeeSerializer
+from insurance.models import Insurance
+from insurance.serializer import InsuranceSerializer
 
 
 @api_view(['POST'])
@@ -50,5 +55,23 @@ def delete_employee(request, user_id):
         return Response(status=204)
     except ObjectDoesNotExist:
         return Response({'message': 'No such user'}, status=404)
+
+
+@api_view(['GET'])
+def get_employee_insurances(request, employee_id):
+    insurances = Insurance.objects.filter(employee=employee_id)
+    insurances = InsuranceSerializer(instance=insurances, many=True)
+    return Response(insurances.data)
+
+
+@api_view(['GET'])
+def get_claim_details(request, employee_id):
+    insurances = Insurance.objects.filter(employee=employee_id)
+    for insurance in insurances:
+        claim = Claim.objects.filter(insurance=insurance.id)
+    claim = ClaimSerializer(instance=claim, many=True)
+    return Response(claim.data)
+
+
 
 

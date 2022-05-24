@@ -1,5 +1,7 @@
 from django.db import models
 
+from organization.models import Organization
+
 
 class Employee(models.Model):
     employee_id = models.IntegerField()
@@ -13,3 +15,4 @@ class Employee(models.Model):
     status = models.BooleanField(default=True)
     created_date = models.DateField()
     updated_date = models.DateField(auto_now=True)
+    organization = models.ForeignKey(Organization, on_delete=models.CASCADE)

@@ -1,3 +1,13 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+.idea
+insurance_management/__pycache__/
+insurance_management/claim/__pycache__/
+insurance_management/employee/__pycache__/
+insurance_management/insurance/__pycache__/
+insurance_management/organization/__pycache__/
+insurance_management/insurance_company/__pycache__/
+insurance_management/policy/__pycache__/
+migrations
+*.log
