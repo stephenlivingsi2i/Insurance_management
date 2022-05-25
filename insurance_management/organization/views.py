@@ -10,6 +10,7 @@ from insurance.models import Insurance
 from insurance.serializer import InsuranceSerializer
 from organization.models import Organization
 from organization.serializer import OrganizationSerializer
+from policy.models import Policy
 
 
 @api_view(['POST'])
@@ -47,6 +48,22 @@ def get_organization_insurances(request, organization_id):
     insurances = Insurance.objects.filter(organization=organization_id)
     insurances = InsuranceSerializer(instance=insurances, many=True)
     return Response(insurances.data)
+
+
+@api_view(['GET'])
+def get_particular_organization_insurance(request, organization_id, employee_id):
+    insurances = Insurance.objects.filter(
+        organization=organization_id, employee=employee_id)
+    insurances = InsuranceSerializer(instance=insurances, many=True)
+    return Response(insurances.data)
+
+
+@api_view(['GET'])
+def get_insurances_by_policy(request, organization_id, policy_id):
+    insurances = Insurance.objects.filter(organization_id=organization_id,
+                                          policy_id=policy_id)
+    insurance_list = InsuranceSerializer(instance=insurances, many=True)
+    return Response(insurance_list.data)
 
 
 

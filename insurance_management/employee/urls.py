@@ -11,6 +11,10 @@ urlpatterns = [
          name='get_employee_insurances'),
     path('claimDetails/<int:employee_id>/', views.get_claim_details,
          name='get_claim_details'),
-
+    path('particularClaimDetails/<int:employee_id>/<int:insurance_id>/',
+         views.get_particular_claim_details, name='get_particular_claim_details'),
+    path('getParticularEmployeeInsurance/<int:employee_id>/<int:insurance_id>/',
+         views.get_particular_employee_insurance,
+         name='get_particular_employee_insurance'),
 
 ]

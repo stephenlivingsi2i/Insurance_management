@@ -65,12 +65,30 @@ def get_employee_insurances(request, employee_id):
 
 
 @api_view(['GET'])
+def get_particular_employee_insurance(request, employee_id, insurance_id):
+    insurances = Insurance.objects.filter(employee=employee_id, id=insurance_id)
+    insurance = InsuranceSerializer(instance=insurances[0])
+    return Response(insurance.data)
+
+
+@api_view(['GET'])
 def get_claim_details(request, employee_id):
     insurances = Insurance.objects.filter(employee=employee_id)
+    claim_list = []
     for insurance in insurances:
         claim = Claim.objects.filter(insurance=insurance.id)
+        claim_list.extend(claim)
+    claim_list = ClaimSerializer(instance=claim_list, many=True)
+    return Response(claim_list.data)
+
+
+@api_view(['GET'])
+def get_particular_claim_details(request, employee_id, insurance_id):
+    insurances = Insurance.objects.filter(employee=employee_id, id=insurance_id)
+    claim = Claim.objects.filter(insurance=insurances[0].id)
     claim = ClaimSerializer(instance=claim, many=True)
     return Response(claim.data)
+
 
 
 
