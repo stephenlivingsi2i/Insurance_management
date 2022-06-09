@@ -1,0 +1,471 @@
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetched all employees
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetched all insurance of employee id 1
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\family\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\claim\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Fetched all properties of employee id 1
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Fetched all employees
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\claim\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Fetched claim details of insurance id 1
+Internal Server Error: /particularClaimDetails/1/1/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 171, in get_particular_claim_details
+    response = claim.data
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `employee_id` is not valid for model `Claim`.
+Fetched claim details of insurance id 1
+Internal Server Error: /particularClaimDetails/1/1/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 171, in get_particular_claim_details
+    response = claim.data
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `employee_id` is not valid for model `Claim`.
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\claim\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Fetched claim details of insurance id 1
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\family\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\family\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetched family members of employee id 1
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\family\models.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /family/
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\property\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance_company\models.py changed, reloading.
+Watching for file changes with StatReloader
+Employee created successfully with id of3
+Internal Server Error: /selfInsurance/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance\views.py", line 31, in self_insurance
+    + (str(request.data["employee"]) + str(request.data['property']))
+KeyError: 'property'
+Internal Server Error: /selfInsurance/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance\views.py", line 31, in self_insurance
+    + (str(request.data["employee"]) + str(request.data['property']))
+KeyError: 'property'
+Internal Server Error: /selfInsurance/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance\views.py", line 31, in self_insurance
+    + (str(request.data["employee"]) + str(request.data['property']))
+KeyError: 'property'
+Internal Server Error: /selfInsurance/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance\views.py", line 31, in self_insurance
+    + (str(request.data["employee"]) + str(request.data['property']))
+KeyError: 'property'
+Internal Server Error: /selfInsurance/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance\views.py", line 31, in self_insurance
+    + (str(request.data["employee"]) + str(request.data['property']))
+KeyError: 'property'
+term insurance created for employee 3
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance\views.py changed, reloading.
+Watching for file changes with StatReloader
+term insurance created for employee 3
+Bad Request: /termInsurance/
+term insurance created for employee 3
+Watching for file changes with StatReloader
+Internal Server Error: /faq/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\faq\views.py", line 20, in create_faq
+    new_qa.is_valid(raise_exception=True)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 1052, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 1106, in get_field_names
+    raise TypeError(
+TypeError: The `fields` option must be a list or tuple or "__all__". Got str.
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\faq\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Employee created successfully with id of1
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\faq\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /faq/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'insurance_management.faq_faq' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\faq\views.py", line 21, in create_faq
+    new_qa.save()
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 739, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 776, in save_base
+    updated = self._save_table(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 919, in _do_insert
+    return manager._insert(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 79, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'insurance_management.faq_faq' doesn't exist")
+Watching for file changes with StatReloader
+Insurance company created with id of 1
+Employee created successfully with id of1
+Employee created successfully with id of2
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\faq\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\faq\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\faq\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /viewAnswers/1/
+Fetched answers of company id 1
+company not exist
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\faq\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\faq\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\faq\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /updateAnswer/2/
+Internal Server Error: /updateAnswer/2/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+TypeError: update_answer() got an unexpected keyword argument 'company_id'
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\faq\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Faq 2 is updated
+Faq 2 is updated
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\faq\views.py changed, reloading.
+Watching for file changes with StatReloader
+Faq 2 is updated

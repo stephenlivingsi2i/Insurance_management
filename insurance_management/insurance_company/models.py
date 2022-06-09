@@ -7,5 +7,5 @@ class Company(models.Model):
     contact_number = models.BigIntegerField()
     email = models.CharField(max_length=50)
     description = models.CharField(max_length=200)
-    created_date = models.DateField()
+    created_date = models.DateField(auto_now=True)
     updated_date = models.DateField(auto_now=True)

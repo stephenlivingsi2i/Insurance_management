@@ -41,7 +41,12 @@ INSTALLED_APPS = [
     'insurance_company',
     'policy',
     'claim',
-    'organization'
+    'organization',
+    'family',
+    'property',
+    'django_celery_results',
+    'django_celery_beat',
+    'faq'
 ]
 
 MIDDLEWARE = [
@@ -82,7 +87,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'insurance_management',
         'USER': 'root',
-        'PASSWORD': 'Sslivings007@',
+        'PASSWORD': 'Sslivings007',
         'HOST': 'localhost',
         'PORT': '3306'
     }
@@ -126,3 +131,49 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CELERY_BROKER_URL = 'redis://127.0.0.1:6379/'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_TIMEZONE = 'Asia/Kolkata'
+
+CELERY_RESULT_BACKEND = 'db+mysql://root:Sslivings007@localhost:3306/insurance_management'
+CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
+
+# SMTP email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'subscriptionforyou45@gmail.com'
+EMAIL_HOST_PASSWORD = 'just$for$demo'
+DEFAULT_FROM_EMAIL = 'Celery<subscriptionforyou45@gmail.com>'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'standard': {
+            'format': '%(asctime)s [%(levelname)s] [%(filename)s:%(lineno)s - %(funcName)s() ] %(name)s: %(message)s'
+        },
+    },
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'insurance_management.log',
+        },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'root': {
+            'handlers': ['file', 'console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}

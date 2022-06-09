@@ -23,5 +23,8 @@ urlpatterns = [
     path('', include('policy.urls')),
     path('', include('claim.urls')),
     path('', include('organization.urls')),
+    path('', include('family.urls')),
+    path('', include('property.urls')),
+    path('', include('faq.urls')),
     path('admin/', admin.site.urls)
 ]

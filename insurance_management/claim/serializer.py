@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from utils.dynamic_serializer import DynamicFieldsModelSerializer
 
 from claim.models import Claim
 
