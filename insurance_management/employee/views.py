@@ -1,6 +1,8 @@
 import logging
 from django.core.exceptions import ObjectDoesNotExist, ValidationError
+from django.db import transaction
 from django.shortcuts import render
+from oauth2_provider.decorators import protected_resource
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -10,26 +12,50 @@ from employee.models import Employee
 from employee.serializer import EmployeeSerializer
 from insurance.models import Insurance
 from insurance.serializer import InsuranceSerializer
-
+from organization.models import Organization
+from user.models import User
+from user.serializer import UserSerializer
 
 logger = logging.getLogger('root')
 
 
 @api_view(['POST'])
+@transaction.atomic()
+@protected_resource(scopes=['admin'])
 def create_employee(request):
     """Create new employee and store it to database"""
     try:
-        new_employee = EmployeeSerializer(data=request.data)
-        new_employee.is_valid(raise_exception=True)
-        new_employee.save()
-        logger.debug(f"Employee created successfully with id of{new_employee.data['id']}")
-        return Response(new_employee.data)
+        user = request.user
+        organization = Organization.objects.get(user_id=user.id)
+        request.data['user_role'] = 'employee'
+        user = UserSerializer(data=request.data)
+        user.is_valid(raise_exception=True)
+        user = user.save()
+
+        employee = Employee.objects.create(
+            employee_id=request.data['employee_id'],
+            name=request.data['name'],
+            gender_type=request.data['gender_type'],
+            role_type=request.data['role_type'],
+            dob=request.data['dob'],
+            mobile_number=request.data['mobile_number'],
+            email=request.data['email'],
+            aadhar_number=request.data['aadhar_number'],
+            current_project=request.data['current_project'],
+            organization=organization,
+            user=user
+        )
+
+        employee.save()
+        logger.debug(f"Employee created successfully with id of{employee.id}")
+        return Response(EmployeeSerializer(instance=employee).data)
     except ValidationError as error:
         logger.debug(f'Validation error:{error.message}')
         return Response({'message': error.message}, status=400)
 
 
 @api_view(['GET'])
+@protected_resource(scopes=['admin'])
 def view_employees(request):
     """Get all user details from database"""
 
@@ -47,6 +73,7 @@ def view_employees(request):
 
 
 @api_view(['PUT'])
+@protected_resource(scopes=['user'])
 def update_employee(request, user_id):
     """Validates the data and updates a user."""
 
@@ -64,6 +91,7 @@ def update_employee(request, user_id):
 
 
 @api_view(['DELETE'])
+@protected_resource(scopes=['admin'])
 def delete_employee(request, user_id):
     """Makes a user status as inActive."""
 
@@ -82,6 +110,7 @@ def delete_employee(request, user_id):
 
 
 @api_view(['GET'])
+@protected_resource(scopes=['user'])
 def get_employee_insurances(request, employee_id):
 
     try:
@@ -106,6 +135,7 @@ def get_employee_insurances(request, employee_id):
 
 
 @api_view(['GET'])
+@protected_resource(scopes=['user'])
 def get_particular_employee_insurance(request, employee_id, insurance_id):
     try:
         employee = Employee.objects.get(pk=employee_id)
@@ -128,6 +158,7 @@ def get_particular_employee_insurance(request, employee_id, insurance_id):
 
 
 @api_view(['GET'])
+@protected_resource(scopes=['user'])
 def get_claim_details(request, employee_id):
 
     try:
@@ -150,6 +181,7 @@ def get_claim_details(request, employee_id):
 
 
 @api_view(['GET'])
+@protected_resource(scopes=['user'])
 def get_particular_claim_details(request, employee_id, insurance_id):
     try:
         employee = Employee.objects.get(pk=employee_id)

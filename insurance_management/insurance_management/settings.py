@@ -46,7 +46,9 @@ INSTALLED_APPS = [
     'property',
     'django_celery_results',
     'django_celery_beat',
-    'faq'
+    'faq',
+    'oauth2_provider',
+    'user'
 ]
 
 MIDDLEWARE = [
@@ -177,3 +179,25 @@ LOGGING = {
         },
     },
 }
+
+OAUTH2_PROVIDER = {
+    # this is the list of available scopes
+    'SCOPES': {
+        'superuser': 'access by superuser',
+        'user': 'access by user',
+        'admin': 'access by admin'
+
+    }
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+    ),
+
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+}
+
+AUTH_USER_MODEL = 'user.User'

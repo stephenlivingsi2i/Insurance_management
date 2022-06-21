@@ -2,6 +2,7 @@ import logging
 
 from django.core.exceptions import ValidationError
 from django.shortcuts import render
+from oauth2_provider.decorators import protected_resource
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -13,6 +14,7 @@ logger = logging.getLogger('root')
 
 
 @api_view(['POST'])
+@protected_resource(scopes=['admin'])
 def create_faq(request):
     try:
         new_qa = FaqSerializer(data=request.data)
@@ -26,6 +28,7 @@ def create_faq(request):
 
 
 @api_view(['GET'])
+@protected_resource(scopes=['admin'])
 def view_answers(request, company_id):
     answers = Faq.objects.filter(company=company_id)
     if answers.exists():
@@ -39,6 +42,7 @@ def view_answers(request, company_id):
 
 
 @api_view(['PUT'])
+@protected_resource(scopes=['admin'])
 def update_answer(request, faq_id):
     try:
         details = Faq.objects.get(pk=faq_id)

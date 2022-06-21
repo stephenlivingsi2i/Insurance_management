@@ -469,3 +469,1744 @@ Faq 2 is updated
 C:\Users\Lenovo\Desktop\pythonProject\insurance_management\faq\views.py changed, reloading.
 Watching for file changes with StatReloader
 Faq 2 is updated
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+Watching for file changes with StatReloader
+Not Found: /
+cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF: client_secret is not hashed; hashing it now.
+cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF: client_secret is already hashed with <django.contrib.auth.hashers.PBKDF2PasswordHasher object at 0x0000021FA8F82890>.
+Watching for file changes with StatReloader
+Not Found: /login/
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance_management\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001908E373100>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Not Found: /o/token/
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 404 9527
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py", line 35, in login_user
+    token_obj = json.loads(token_obj.text)
+  File "C:\Program Files\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000024F64137240>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Not Found: /o/token/
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 404 9527
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py", line 34, in login_user
+    token_obj = json.loads(token_obj.text)
+  File "C:\Program Files\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000024F63D89760>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Not Found: /o/token/
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 404 9527
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py", line 34, in login_user
+    token_obj = json.loads(token_obj.text)
+  File "C:\Program Files\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000002029D7FC9A0>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Not Found: /o/token/
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 404 9527
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py", line 40, in login_user
+    return Response("token_obj")
+TypeError: Response.__init__() takes 1 positional argument but 2 were given
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance_management\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000020D10610E00>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x0000020D10664B20>.
+Application 'cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username livings@gmail.com.
+Authorizing access to user <User: livings@gmail.com>.
+Validating access to scopes ['read', 'write', 'groups'] for client 'cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF' (<Application: cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF>).
+Issuing token {'access_token': 'rKnIwtugE4NQA1P264hq9pmQMmGvjh', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'read write groups', 'refresh_token': 'W5sLFhLRBtcLPemzeEZoSfWVqoDXbx'} to client id 'cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF' (<Application: cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF>) and username livings@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 176
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py", line 40, in login_user
+    return Response(token_obj)
+TypeError: Response.__init__() takes 1 positional argument but 2 were given
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001F673A15490>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x000001F673B89810>.
+Application 'cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username livings@gmail.com.
+Authorizing access to user <User: livings@gmail.com>.
+Validating access to scopes ['read', 'write', 'groups'] for client 'cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF' (<Application: cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF>).
+Issuing token {'access_token': 'UTIWGJTJT6EqZLtUWrTyy7hspwkrsr', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'read write groups', 'refresh_token': 'tPYPlcvQQeqknXLCANNS8xLftnWEOS'} to client id 'cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF' (<Application: cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF>) and username livings@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 176
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py", line 40, in login_user
+    return Response(token_obj)
+TypeError: Response.__init__() takes 1 positional argument but 2 were given
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000258DB030E00>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x00000258DB080CD0>.
+Application 'cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username livings@gmail.com.
+Authorizing access to user <User: livings@gmail.com>.
+Validating access to scopes ['read', 'write', 'groups'] for client 'cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF' (<Application: cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF>).
+Issuing token {'access_token': 'iEO7ktUmha5rQFpE2p9BFV95hxuHvQ', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'read write groups', 'refresh_token': '1aQE8F4Z1uAm1F4VdwW9eA7LHysq3G'} to client id 'cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF' (<Application: cAAyxSSjJnb9Y9rHf4N6CXLRkMruWdATxmlGMZvF>) and username livings@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 176
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000025E3989D300>.
+Internal Server Error: /organization/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py", line 35, in create_organization
+    organization = Organization.objects.create(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 485, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 310, in __set__
+    super().__set__(instance, value)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "2": "Organization.user" must be a "User" instance.
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001C788B1D300>.
+Internal Server Error: /organization/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py", line 40, in create_organization
+    organization.is_valid(raise_exception=True)
+AttributeError: 'Organization' object has no attribute 'is_valid'
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001972680D760>.
+Internal Server Error: /organization/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py", line 30, in create_organization
+    user.save()
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 180, in save
+    assert hasattr(self, '_errors'), (
+AssertionError: You must call `.is_valid()` before calling `.save()`.
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001579BAB1800>.
+Bad Request: /organization/
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000024D9E951760>.
+Bad Request: /organization/
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001B121FDF100>.
+Bad Request: /organization/
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001FB58F415D0>.
+jcywjgvhQqgxDk1r28ZrJAJ5gOVxaGTRrIw5jeHn: client_secret is not hashed; hashing it now.
+jcywjgvhQqgxDk1r28ZrJAJ5gOVxaGTRrIw5jeHn: client_secret is already hashed with <django.contrib.auth.hashers.PBKDF2PasswordHasher object at 0x000001FB58F3B3D0>.
+Internal Server Error: /organization/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py", line 33, in create_organization
+    organization = Organization.objects.create(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 485, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 310, in __set__
+    super().__set__(instance, value)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "UserSerializer(data={'email': 'ideas1it@gmail.com', 'password': 'ideas1it', 'name': 'ideas1it', 'address': 'chennai'}):
+    id = IntegerField(label='ID', read_only=True)
+    email = EmailField(max_length=254, validators=[<UniqueValidator(queryset=User.objects.all())>])
+    password = CharField(required=True, validators=[<function validate_password>], write_only=True)
+    created_at = DateTimeField(read_only=True)
+    updated_at = DateTimeField(read_only=True)
+    is_active = BooleanField(required=False)
+    is_staff = BooleanField(required=False)
+    is_admin = BooleanField(required=False)": "Organization.user" must be a "User" instance.
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001989388D760>.
+Bad Request: /organization/
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000198934FD030>.
+Bad Request: /organization/
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000198934FF740>.
+bD5TeXYvFpwefhgQnCNV9vHBDo3UcQcdk1CayhWc: client_secret is not hashed; hashing it now.
+bD5TeXYvFpwefhgQnCNV9vHBDo3UcQcdk1CayhWc: client_secret is already hashed with <django.contrib.auth.hashers.PBKDF2PasswordHasher object at 0x00000198934AF4F0>.
+Internal Server Error: /organization/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py", line 33, in create_organization
+    organization = Organization.objects.create(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 485, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 310, in __set__
+    super().__set__(instance, value)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "5": "Organization.user" must be a "User" instance.
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001F07D4C1710>.
+Internal Server Error: /organization/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py", line 42, in create_organization
+    logger.debug(f"Created organization id of {organization.data['id']}")
+AttributeError: 'Organization' object has no attribute 'data'
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001DE933B1670>.
+Internal Server Error: /organization/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py", line 42, in create_organization
+    logger.debug(f"Created organization id of {organization.data['id']}")
+AttributeError: 'Organization' object has no attribute 'data'
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001FE543C16C0>.
+Created organization id of 4
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000002AD25A60720>.
+Unauthorized: /employee/
+nG5HlR36tdlm8Cw1xhcbfaQ0Ktxo9KXkH5ex5865: client_secret is not hashed; hashing it now.
+nG5HlR36tdlm8Cw1xhcbfaQ0Ktxo9KXkH5ex5865: client_secret is already hashed with <django.contrib.auth.hashers.PBKDF2PasswordHasher object at 0x00000278DFFBC850>.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000002C633A8D8A0>.
+Unauthorized: /employee/
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000002C633702C50>.
+Unauthorized: /organization/
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000002C633701580>.
+Unauthorized: /organization/
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000002C633700A40>.
+Unauthorized: /organization/
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000002C633701670>.
+Unauthorized: /organization/
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001442BD8B0B0>.
+Unauthorized: /organization/
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance_management\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000019445FD1620>.
+Internal Server Error: /organization/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py", line 33, in create_organization
+    user.set_password(request.data['password'])
+KeyError: 'password'
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000019445C45580>.
+Internal Server Error: /organization/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'ideas@gmail.com' for key 'email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py", line 29, in create_organization
+    user = User.objects.create(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 739, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 776, in save_base
+    updated = self._save_table(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 919, in _do_insert
+    return manager._insert(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 79, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'ideas@gmail.com' for key 'email'")
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001C1033718A0>.
+Internal Server Error: /organization/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'ideas@gmail.com' for key 'email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py", line 29, in create_organization
+    user = User.objects.create(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 739, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 776, in save_base
+    updated = self._save_table(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 919, in _do_insert
+    return manager._insert(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 79, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'ideas@gmail.com' for key 'email'")
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001C102FFD6C0>.
+Created organization id of 5
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001DF863B1850>.
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 28, in create_employee
+    user.set_password(request.data['password'])
+KeyError: 'password'
+Bad Request: /employee/
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001DF8601D580>.
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'stephen8@gmail.com' for key 'email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 24, in create_employee
+    user = User.objects.create(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 739, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 776, in save_base
+    updated = self._save_table(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 919, in _do_insert
+    return manager._insert(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 79, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'stephen8@gmail.com' for key 'email'")
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001DF860A1C10>.
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 38, in create_employee
+    aadhar=request.data['aadhar'],
+KeyError: 'aadhar'
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000270769B17B0>.
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'steph890@gmail.com' for key 'email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 24, in create_employee
+    user = User.objects.create(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 739, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 776, in save_base
+    updated = self._save_table(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 919, in _do_insert
+    return manager._insert(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 79, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'steph890@gmail.com' for key 'email'")
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027076625850>.
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 41, in create_employee
+    address=request.data['address'],
+KeyError: 'address'
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000018F75A358F0>.
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'step90@gmail.com' for key 'email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Program Files\Python310\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 26, in create_employee
+    user = User.objects.create(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 739, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 776, in save_base
+    updated = self._save_table(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 919, in _do_insert
+    return manager._insert(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 79, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'step90@gmail.com' for key 'email'")
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000018F7569CA90>.
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Program Files\Python310\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 43, in create_employee
+    address=request.data['address'],
+KeyError: 'address'
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000013C27DF9940>.
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Program Files\Python310\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 32, in create_employee
+    employee = Employee.objects.create(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 485, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "18": "Employee.organization" must be a "Organization" instance.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000013C27BCCEF0>.
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Program Files\Python310\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 42, in create_employee
+    organization=request.data['organization'],
+KeyError: 'organization'
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000278692A0540>.
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Program Files\Python310\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 32, in create_employee
+    employee = Employee.objects.create(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 485, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "18": "Employee.organization" must be a "Organization" instance.
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001E37E85D800>.
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py", line 22, in login_user
+    print(app_obj[0].client_id)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 318, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance_management\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001CBCF885760>.
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py", line 22, in login_user
+    print(app_obj[0].client_id)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 318, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+bEyKhmQ1kwJjwXoFhbsOkNZTZA6OZpu9t7dCEAAp: client_secret is not hashed; hashing it now.
+bEyKhmQ1kwJjwXoFhbsOkNZTZA6OZpu9t7dCEAAp: client_secret is already hashed with <django.contrib.auth.hashers.PBKDF2PasswordHasher object at 0x000001F416BAB130>.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000285AE885850>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x00000285AE8CD060>.
+Application 'bEyKhmQ1kwJjwXoFhbsOkNZTZA6OZpu9t7dCEAAp' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username vicky@gmail.com.
+Authorizing access to user <User: vicky@gmail.com>.
+Validating access to scopes ['read', 'write', 'groups'] for client 'bEyKhmQ1kwJjwXoFhbsOkNZTZA6OZpu9t7dCEAAp' (<Application: bEyKhmQ1kwJjwXoFhbsOkNZTZA6OZpu9t7dCEAAp>).
+Issuing token {'access_token': 'bOqmUJ4UsIoofpzKqFQSh4YIHJts5c', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'read write groups', 'refresh_token': 'rNV2sZuAhWFxrDp5cUhUcD2CnQ9Qhk'} to client id 'bEyKhmQ1kwJjwXoFhbsOkNZTZA6OZpu9t7dCEAAp' (<Application: bEyKhmQ1kwJjwXoFhbsOkNZTZA6OZpu9t7dCEAAp>) and username vicky@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 176
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000285AE63DE90>.
+Unauthorized: /organization/
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000285AE63C180>.
+Internal Server Error: /organization/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py", line 32, in create_organization
+    user = user.save()
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\serializer.py", line 35, in create
+    user_role=validated_data['user_role']
+KeyError: 'user_role'
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000211A6211800>.
+ICogvCLXfXlxtv2mkgf9Zzg3Xxeifh7kJksAw3nO: client_secret is not hashed; hashing it now.
+ICogvCLXfXlxtv2mkgf9Zzg3Xxeifh7kJksAw3nO: client_secret is already hashed with <django.contrib.auth.hashers.PBKDF2PasswordHasher object at 0x00000211A620B910>.
+Created organization id of 6
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000211A5FCD760>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x00000211A5FFCE50>.
+Application 'ICogvCLXfXlxtv2mkgf9Zzg3Xxeifh7kJksAw3nO' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username vickycom@gmail.com.
+Authorizing access to user <User: vickycom@gmail.com>.
+Validating access to scopes ['read', 'write', 'groups'] for client 'ICogvCLXfXlxtv2mkgf9Zzg3Xxeifh7kJksAw3nO' (<Application: ICogvCLXfXlxtv2mkgf9Zzg3Xxeifh7kJksAw3nO>).
+Issuing token {'access_token': 'z0cOsRhksQZt8vbUqrmHl2zhGQUTIY', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'read write groups', 'refresh_token': '0ohTDmFxTN2Yx7fLVyMX7mtstIsJ9A'} to client id 'ICogvCLXfXlxtv2mkgf9Zzg3Xxeifh7kJksAw3nO' (<Application: ICogvCLXfXlxtv2mkgf9Zzg3Xxeifh7kJksAw3nO>) and username vickycom@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 176
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001221EF01800>.
+Unauthorized: /employee/
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001221EB97970>.
+Bad Request: /employee/
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000202C6A51800>.
+Bad Request: /employee/
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000016C396E1990>.
+coZXlKuf6OvTURJ5q4xjxAVvCJCmYjZZG8bia3sn: client_secret is not hashed; hashing it now.
+coZXlKuf6OvTURJ5q4xjxAVvCJCmYjZZG8bia3sn: client_secret is already hashed with <django.contrib.auth.hashers.PBKDF2PasswordHasher object at 0x0000016C396CBA60>.
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.DataError: (1406, "Data too long for column 'role_type' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Program Files\Python310\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 33, in create_employee
+    employee = Employee.objects.create(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 739, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 776, in save_base
+    updated = self._save_table(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\base.py", line 919, in _do_insert
+    return manager._insert(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 79, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.DataError: (1406, "Data too long for column 'role_type' at row 1")
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000016C3949A430>.
+2iWnrvk35uxVqBvnwGhbEX5tuMxpr1x1EzDfiuZk: client_secret is not hashed; hashing it now.
+2iWnrvk35uxVqBvnwGhbEX5tuMxpr1x1EzDfiuZk: client_secret is already hashed with <django.contrib.auth.hashers.PBKDF2PasswordHasher object at 0x0000016C396CBA60>.
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Program Files\Python310\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 48, in create_employee
+    logger.debug(f"Employee created successfully with id of{employee.data['id']}")
+AttributeError: 'Employee' object has no attribute 'data'
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001D6A6CE1800>.
+7ZduAihW6s7XiDWC7rw5B7dhqFLHSULvEwmrEpYS: client_secret is not hashed; hashing it now.
+7ZduAihW6s7XiDWC7rw5B7dhqFLHSULvEwmrEpYS: client_secret is already hashed with <django.contrib.auth.hashers.PBKDF2PasswordHasher object at 0x000001D6A6CD7A00>.
+Employee created successfully with id of2
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Program Files\Python310\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 49, in create_employee
+    return Response(employee.data)
+AttributeError: 'Employee' object has no attribute 'data'
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000002ED4BBF1940>.
+bWHXbJEOVWUUquMDz8kZvfOt9zVCB6iAv3iEDKWK: client_secret is not hashed; hashing it now.
+bWHXbJEOVWUUquMDz8kZvfOt9zVCB6iAv3iEDKWK: client_secret is already hashed with <django.contrib.auth.hashers.PBKDF2PasswordHasher object at 0x000002ED4BBF7250>.
+Employee created successfully with id of3
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Program Files\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Program Files\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+  File "C:\Program Files\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Employee is not JSON serializable
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001D228EA1990>.
+slM4gWm0ShG7poiT9nEI2IfrJEC21Hpd2Xkr2GbU: client_secret is not hashed; hashing it now.
+slM4gWm0ShG7poiT9nEI2IfrJEC21Hpd2Xkr2GbU: client_secret is already hashed with <django.contrib.auth.hashers.PBKDF2PasswordHasher object at 0x000001D228E9B700>.
+Employee created successfully with id of4
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x000001D228C58540>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x000001D228C90670>.
+Application 'slM4gWm0ShG7poiT9nEI2IfrJEC21Hpd2Xkr2GbU' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username livings123@gmail.com.
+Authorizing access to user <User: livings123@gmail.com>.
+Validating access to scopes ['read', 'write', 'groups'] for client 'slM4gWm0ShG7poiT9nEI2IfrJEC21Hpd2Xkr2GbU' (<Application: slM4gWm0ShG7poiT9nEI2IfrJEC21Hpd2Xkr2GbU>).
+Issuing token {'access_token': 'uykKGcDvYL9rMGQjvvwDWCxkJdAcrQ', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'read write groups', 'refresh_token': 'z6q6BKRHkIWnSOrBZtYFJsInDPdxbf'} to client id 'slM4gWm0ShG7poiT9nEI2IfrJEC21Hpd2Xkr2GbU' (<Application: slM4gWm0ShG7poiT9nEI2IfrJEC21Hpd2Xkr2GbU>) and username livings123@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 176
+Watching for file changes with StatReloader
+IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg: client_secret is not hashed; hashing it now.
+IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg: client_secret is already hashed with <django.contrib.auth.hashers.PBKDF2PasswordHasher object at 0x00000285B643C8E0>.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000021BA0C15F30>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x0000021BA0C2EC80>.
+Application 'IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username dev@gmail.com.
+Authorizing access to user <User: dev@gmail.com>.
+Validating access to scopes ['superuser', 'admin', 'user'] for client 'IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg' (<Application: IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg>).
+Client error in token request, (invalid_scope)  <oauthlib.Request SANITIZED>.
+Bad Request: /o/token/
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 400 26
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance_management\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000159E62C6020>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x00000159E62CADD0>.
+Application 'IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username dev@gmail.com.
+Authorizing access to user <User: dev@gmail.com>.
+Validating access to scopes ['superuser', 'admin', 'user'] for client 'IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg' (<Application: IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg>).
+Issuing token {'access_token': 'GSOLqOXoSOTRr75IUKgv4MSiXIQ8Tb', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'superuser admin user', 'refresh_token': 'XEkhjWKTtnN18oub10rdq6eeu8ZW9O'} to client id 'IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg' (<Application: IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg>) and username dev@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 179
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000159E619EA20>.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000159E619D300>.
+ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn: client_secret is not hashed; hashing it now.
+ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn: client_secret is already hashed with <django.contrib.auth.hashers.PBKDF2PasswordHasher object at 0x00000159E6243F70>.
+Created organization id of 7
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000159E619C720>.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000159E619E930>.
+Internal Server Error: /employee/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Program Files\Python310\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\oauth2_provider\decorators.py", line 34, in _validate
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 29, in create_employee
+    organization = Organization.objects.get(user_id=user.id)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+organization.models.Organization.DoesNotExist: Organization matching query does not exist.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000159E62E1CB0>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x00000159E62CADD0>.
+Application 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username livingscom@gmail.com.
+Authorizing access to user <User: livingscom@gmail.com>.
+Validating access to scopes ['admin', 'user'] for client 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' (<Application: ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn>).
+Issuing token {'access_token': 'kAwsQlDlhOmRULIs9YT0ciob8geMuv', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'admin user', 'refresh_token': 'NFRts3fqi7Vc0kYLTxdpK6AV7IaSO0'} to client id 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' (<Application: ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn>) and username livingscom@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 169
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000159E619E700>.
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py", line 27, in login_user
+    user = authenticate(username=request.data['username'], password=request.data['password'])
+KeyError: 'username'
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000159E65DE5C0>.
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py", line 27, in login_user
+    user = authenticate(username=request.data['username'], password=request.data['password'])
+KeyError: 'username'
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000159E681D3A0>.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000159E681CF90>.
+w7i76vWOBzln8rztbQiSnr1kVLfnxxz8ZDjx7ubp: client_secret is not hashed; hashing it now.
+w7i76vWOBzln8rztbQiSnr1kVLfnxxz8ZDjx7ubp: client_secret is already hashed with <django.contrib.auth.hashers.PBKDF2PasswordHasher object at 0x00000159E6243F70>.
+Employee created successfully with id of5
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000159E681F600>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x00000159E62CADD0>.
+Application 'w7i76vWOBzln8rztbQiSnr1kVLfnxxz8ZDjx7ubp' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username livin@gmail.com.
+Authorizing access to user <User: livin@gmail.com>.
+Validating access to scopes ['user'] for client 'w7i76vWOBzln8rztbQiSnr1kVLfnxxz8ZDjx7ubp' (<Application: w7i76vWOBzln8rztbQiSnr1kVLfnxxz8ZDjx7ubp>).
+Issuing token {'access_token': 'VZs8nYxr2LZS44txaTZmN31qADrOH1', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'user', 'refresh_token': 'hcq9SUa7qOdwXJOgDmiylAPX8hGLc0'} to client id 'w7i76vWOBzln8rztbQiSnr1kVLfnxxz8ZDjx7ubp' (<Application: w7i76vWOBzln8rztbQiSnr1kVLfnxxz8ZDjx7ubp>) and username livin@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 163
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000159E619FDD0>.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x00000159E619C220>.
+Forbidden: /employee/
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\organization\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\family\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\family\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\faq\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\insurance\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D1060A480>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x0000027D105E78B0>.
+Application 'IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username dev@gmail.com.
+Authorizing access to user <User: dev@gmail.com>.
+Validating access to scopes ['superuser', 'admin', 'user'] for client 'IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg' (<Application: IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg>).
+Issuing token {'access_token': 'Nf8Dua3fG8qKiju4S9LBcIjHLsxNjq', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'superuser admin user', 'refresh_token': 'pDRjYKddRY6aAUNs8aGNdhIOlzeyWD'} to client id 'IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg' (<Application: IvDcMcG9lEuKJAkB83eszEQsnT6Et3DeyNNSU1pg>) and username dev@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 179
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F6930>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x0000027D105E78B0>.
+Application 'w7i76vWOBzln8rztbQiSnr1kVLfnxxz8ZDjx7ubp' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username livin@gmail.com.
+Authorizing access to user <User: livin@gmail.com>.
+Validating access to scopes ['user'] for client 'w7i76vWOBzln8rztbQiSnr1kVLfnxxz8ZDjx7ubp' (<Application: w7i76vWOBzln8rztbQiSnr1kVLfnxxz8ZDjx7ubp>).
+Issuing token {'access_token': 'n5d1ZfQou5iIvoG908OnOt36Kkfbeb', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'user', 'refresh_token': 'IL8lpYdHGzA3O7QLKLZE9AGgdHW6OF'} to client id 'w7i76vWOBzln8rztbQiSnr1kVLfnxxz8ZDjx7ubp' (<Application: w7i76vWOBzln8rztbQiSnr1kVLfnxxz8ZDjx7ubp>) and username livin@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 163
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F42C0>.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F4E00>.
+Forbidden: /viewEmployees/
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F5620>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x0000027D105E78B0>.
+Application 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username livingscom@gmail.com.
+Authorizing access to user <User: livingscom@gmail.com>.
+Validating access to scopes ['admin', 'user'] for client 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' (<Application: ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn>).
+Issuing token {'access_token': 'ykFEPEvB270UZByaPc1H5ZOHmSy0SW', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'admin user', 'refresh_token': '57aMVHmlO8CiWyPmn1nB7eAxdR6zL4'} to client id 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' (<Application: ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn>) and username livingscom@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 169
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F60C0>.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F4DB0>.
+Fetched all employees
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F68E0>.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F7470>.
+Employee id 3 updated
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F6AC0>.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F7560>.
+Employee id 3 updated
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F78D0>.
+Unauthorized: /update/3/
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F6160>.
+Method Not Allowed: /login/
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F5DF0>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x0000027D105E78B0>.
+Application 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username livingscom@gmail.com.
+Authorizing access to user <User: livingscom@gmail.com>.
+Validating access to scopes ['admin', 'user'] for client 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' (<Application: ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn>).
+Issuing token {'access_token': 'YL7mhRxa0DQLGYNanGsDmBGxlnCtwu', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'admin user', 'refresh_token': 'mOBcOCc6m4woYnWg4jTmXEZXlHDkIa'} to client id 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' (<Application: ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn>) and username livingscom@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 169
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F7650>.
+Method Not Allowed: /update/3/
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F5800>.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F5D00>.
+Employee id 3 updated
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F71F0>.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F6930>.
+Internal Server Error: /update/90/
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\oauth2_provider\decorators.py", line 34, in _validate
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\insurance_management\employee\views.py", line 81, in update_employee
+    old_employee_data = Employee.objects.get(pk=user_id)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\pythonProject\venv\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+employee.models.Employee.DoesNotExist: Employee matching query does not exist.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D104F5440>.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D1037DBC0>.
+Employee id 3 updated
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D1037DBC0>.
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D1037E980>.
+Employee id 3 updated
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D1037E430>.
+Method Not Allowed: /login/
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000027D1043AF70>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x0000027D105E78B0>.
+Application 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username livingscom@gmail.com.
+Authorizing access to user <User: livingscom@gmail.com>.
+Validating access to scopes ['admin', 'user'] for client 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' (<Application: ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn>).
+Issuing token {'access_token': 'a8l6gK8dGuY1pKtbmQVZYHlgdGbLaG', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'admin user', 'refresh_token': 'L4oaV5UaJhcPsCe8YkDHOCAVION8YN'} to client id 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' (<Application: ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn>) and username livingscom@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 169
+C:\Users\Lenovo\Desktop\pythonProject\insurance_management\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dispatching token_type Bearer request to <oauthlib.oauth2.rfc6749.tokens.BearerToken object at 0x0000014DE56AE980>.
+Starting new HTTP connection (1): 127.0.0.1:8000
+Dispatching grant_type password request to <oauthlib.oauth2.rfc6749.grant_types.resource_owner_password_credentials.ResourceOwnerPasswordCredentialsGrant object at 0x0000014DE57AF790>.
+Application 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' has type 'public'
+Validating access token request, <oauthlib.Request SANITIZED>.
+Validating username livingscom@gmail.com.
+Authorizing access to user <User: livingscom@gmail.com>.
+Validating access to scopes ['admin', 'user'] for client 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' (<Application: ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn>).
+Issuing token {'access_token': 'NTUT9Ld2dOyemqtLrKPwpyFXTzdfS9', 'expires_in': 36000, 'token_type': 'Bearer', 'scope': 'admin user', 'refresh_token': '5miUpvcKtyFUCtTmg0FUzOy7DpkSXj'} to client id 'ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn' (<Application: ADnK0HBUUl9yEc3qkR0Tsz3nhXjwOSvswQtjNLcn>) and username livingscom@gmail.com.
+http://127.0.0.1:8000 "POST /o/token/ HTTP/1.1" 200 169

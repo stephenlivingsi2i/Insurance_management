@@ -4,6 +4,7 @@ from django.core.exceptions import ObjectDoesNotExist, ValidationError
 from django.shortcuts import render
 
 # Create your views here.
+from oauth2_provider.decorators import protected_resource
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -16,26 +17,42 @@ from insurance.serializer import InsuranceSerializer
 from organization.models import Organization
 from organization.serializer import OrganizationSerializer
 from policy.models import Policy
-
+from user.models import User
+from user.serializer import UserSerializer
 
 logger = logging.getLogger('root')
 
 
 @api_view(['POST'])
+@protected_resource(scopes=['superuser'])
 def create_organization(request):
     """Create new organization"""
     try:
-        new_organization = OrganizationSerializer(data=request.data)
-        new_organization.is_valid(raise_exception=True)
-        new_organization.save()
-        logger.debug(f"Created organization id of {new_organization.data['id']}")
-        return Response(new_organization.data)
+        request.data['user_role'] = 'organization'
+        user = UserSerializer(data=request.data)
+        user.is_valid(raise_exception=True)
+        user = user.save()
+        # user = User.objects.create(
+        #     email=request.data['email'],
+        #     user_role='organization'
+        # )
+        # user.set_password(request.data['password'])
+        # user.save()
+        organization = Organization.objects.create(
+            name=request.data['name'],
+            address=request.data['address'],
+            user=user
+        )
+        organization.save()
+        logger.debug(f"Created organization id of {organization.id}")
+        return Response(OrganizationSerializer(instance=organization).data)
     except ValidationError as error:
         logger.debug(f'Validation error:{error.message}')
         return Response({'message': error.message}, status=400)
 
 
 @api_view(['GET'])
+@protected_resource(scopes=['superuser'])
 def view_organizations(request):
     """View all organization details from database"""
     all_organization = Organization.objects.all()
@@ -50,6 +67,7 @@ def view_organizations(request):
 
 
 @api_view(['PUT'])
+@protected_resource(scopes=['admin'])
 def update_organization(request, organization_id):
     """Update organization details"""
     try:
@@ -69,6 +87,7 @@ def update_organization(request, organization_id):
 
 
 @api_view(['GET'])
+@protected_resource(scopes=['admin'])
 def get_organization_insurances(request, organization_id):
     try:
         insurances = Insurance.objects.filter(organization=organization_id)
@@ -85,6 +104,7 @@ def get_organization_insurances(request, organization_id):
 
 
 @api_view(['GET'])
+@protected_resource(scopes=['admin user'])
 def get_particular_organization_insurance(request, organization_id, employee_id):
     try:
         organization_details = Organization.objects.get(pk=organization_id)
@@ -109,6 +129,7 @@ def get_particular_organization_insurance(request, organization_id, employee_id)
 
 
 @api_view(['GET'])
+@protected_resource(scopes=['admin'])
 def get_insurances_by_policy(request, organization_id, policy_id):
     try:
         organization_details = Organization.objects.get(pk=organization_id)
@@ -133,6 +154,7 @@ def get_insurances_by_policy(request, organization_id, policy_id):
 
 
 @api_view(['GET'])
+@protected_resource(scopes=['admin user'])
 def get_particular_organization_insurance_claim(request,
                                                 organization_id, employee_id):
     try:

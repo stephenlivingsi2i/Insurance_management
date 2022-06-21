@@ -4,6 +4,7 @@ from django.core.exceptions import ObjectDoesNotExist, ValidationError
 from django.shortcuts import render
 
 # Create your views here.
+from oauth2_provider.decorators import protected_resource
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -15,6 +16,7 @@ logger = logging.getLogger('root')
 
 
 @api_view(['POST'])
+@protected_resource(scopes=['user'])
 def create_property(request):
     """Create new property and add it to employee"""
     try:
@@ -30,6 +32,7 @@ def create_property(request):
 
 
 @api_view(['GET'])
+@protected_resource(scopes=['user'])
 def view_property_by_id(request, employee_id):
     """Get all user properties of employee """
 
@@ -44,6 +47,7 @@ def view_property_by_id(request, employee_id):
 
 
 @api_view(['PUT'])
+@protected_resource(scopes=['user'])
 def update_property(request, property_id):
     """Validates the data and updates a property."""
     try:

@@ -19,7 +19,6 @@ class Insurance(models.Model):
     remaining_amount = models.IntegerField()
     start_date = models.DateField(auto_now=True)
     renewal_date = models.DateField()
-    remaining_days = models.IntegerField(null=True)
     employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
     policy = models.ForeignKey(Policy, on_delete=models.CASCADE, null=True)
     organization = models.ForeignKey(Organization, on_delete=models.CASCADE, null=True)

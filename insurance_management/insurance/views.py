@@ -4,6 +4,7 @@ from django.core.exceptions import ObjectDoesNotExist, ValidationError
 from django.shortcuts import render
 
 # Create your views here.
+from oauth2_provider.decorators import protected_resource
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -20,6 +21,7 @@ logger = logging.getLogger('root')
 
 
 @api_view(['POST'])
+@protected_resource(scopes=['user'])
 def self_insurance(request):
     """Create new insurance for employee and store it"""
     try:
@@ -42,6 +44,7 @@ def self_insurance(request):
 
 
 @api_view(['POST'])
+@protected_resource(scopes=['admin'])
 def term_insurance(request):
     try:
         request.data["remaining_amount"] = request.data["insurance_amount"]
@@ -63,6 +66,7 @@ def term_insurance(request):
 
 
 @api_view(['POST'])
+@protected_resource(scopes=['admin'])
 def family_individual_insurance(request):
     try:
         request.data["remaining_amount"] = request.data["insurance_amount"]
@@ -95,33 +99,33 @@ def family_individual_insurance(request):
         logger.debug(f'Validation error:{error.message}')
         return Response({'message': error.message}, status=400)
 
-
-@api_view(['GET'])
-def view_insurances(request):
-    """View all insurance details from database"""
-    all_insurances = Insurance.objects.all()
-    if all_insurances.exists():
-        all_insurances = InsuranceSerializer(instance=all_insurances, many=True)
-        logger.debug("Fetched all insurances")
-        return Response(all_insurances.data)
-    else:
-        logger.debug("insurances not found")
-        return Response("insurances not found")
-
-
-@api_view(['PUT'])
-def update_insurance(request, insurance_id):
-    """Update old insurance details"""
-    try:
-        old_insurance = Insurance.objects.get(pk=insurance_id)
-        updated_insurance = InsuranceSerializer(old_insurance,
-                                                data=request.data, partial=True)
-        updated_insurance.is_valid(raise_exception=True)
-        logger.debug(f"Updated insurance detail of id {insurance_id}")
-        return Response(f"successfully updated insurance detail of id {insurance_id}")
-    except ValidationError as error:
-        logger.debug(f'Validation error:{error.message}')
-        return Response({'message': error.message}, status=400)
-
+#
+# @api_view(['GET'])
+# def view_insurances(request):
+#     """View all insurance details from database"""
+#     all_insurances = Insurance.objects.all()
+#     if all_insurances.exists():
+#         all_insurances = InsuranceSerializer(instance=all_insurances, many=True)
+#         logger.debug("Fetched all insurances")
+#         return Response(all_insurances.data)
+#     else:
+#         logger.debug("insurances not found")
+#         return Response("insurances not found")
+#
+#
+# @api_view(['PUT'])
+# def update_insurance(request, insurance_id):
+#     """Update old insurance details"""
+#     try:
+#         old_insurance = Insurance.objects.get(pk=insurance_id)
+#         updated_insurance = InsuranceSerializer(old_insurance,
+#                                                 data=request.data, partial=True)
+#         updated_insurance.is_valid(raise_exception=True)
+#         logger.debug(f"Updated insurance detail of id {insurance_id}")
+#         return Response(f"successfully updated insurance detail of id {insurance_id}")
+#     except ValidationError as error:
+#         logger.debug(f'Validation error:{error.message}')
+#         return Response({'message': error.message}, status=400)
+#
 
 

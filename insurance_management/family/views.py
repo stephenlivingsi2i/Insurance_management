@@ -1,5 +1,6 @@
 import logging
 from django.shortcuts import render
+from oauth2_provider.decorators import protected_resource
 from prompt_toolkit.validation import ValidationError
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -12,6 +13,7 @@ logger = logging.getLogger('root')
 
 
 @api_view(['POST'])
+@protected_resource(scopes=['user'])
 def add_relation(request):
     """Add new relation to the employee and store it to database"""
     try:
@@ -26,6 +28,7 @@ def add_relation(request):
 
 
 @api_view(['GET'])
+@protected_resource(scopes=['admin user'])
 def view_family(request, employee_id):
     """Get all family details of an employee from database"""
 
@@ -42,6 +45,7 @@ def view_family(request, employee_id):
 
 
 @api_view(['PUT'])
+@protected_resource(scopes=['user'])
 def update_relation(request, family_id):
     """Validates the data and updates a relation."""
 
