@@ -32,7 +32,7 @@ def remind_insurances(self):
     try:
         mail_server = smtplib.SMTP('smtp.gmail.com', 587)
         mail_server.starttls()
-        mail_server.login("subscriptionforyou45@gmail.com", "just$for$demo")
+        mail_server.login("remainderinsurance@gmail.com", "pxybbalvzouskocg")
         today_date = date.today()
         today_date = today_date+timedelta(days=2)
         today_date = today_date.strftime('%Y-%m-%d')
@@ -47,7 +47,7 @@ def remind_insurances(self):
             email = insurance.employee.email
             message = f"Hi, {name} , your insurance plan {insurance_number} " \
                       f"expired within two days"
-            mail_server.sendmail("subscriptionforyou45@gmail.com", email, message)
+            mail_server.sendmail("remainderinsurance@gmail.com", email, message)
 
         # return Response("mail sent successfully")
         mail_server.quit()

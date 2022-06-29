@@ -1,0 +1,133 @@
+version: "3.8"
+services:
+  db:
+      container_name: insurance_app_db
+      image: mysql
+      volumes:
+        - ./data/db:/var/lib/mysql
+      environment:
+        - MYSQL_DB=mysql
+#        - MYSQL_USER=root
+        - MYSQL_PASSWORD=root
+        - MYSQL_ROOT_PASSWORD=root
+      ports:
+        - "3307:3306"
+#      networks:
+#        - appnetwork
+
+#  web:
+#    container_name: insurance_app_web
+#    build: .
+#    command: bash -c "
+#      python manage.py makemigrations
+#      && python manage.py migrate
+#      && python manage.py runserver 0.0.0.0:8000
+#      "
+#    volumes:
+#      - .:/app
+#    ports:
+#      - "8000:8000"
+#    environment:
+#      - MYSQL_NAME=mysql
+#      - MYSQL_USER=root
+#      - MYSQL_PASSWORD=root
+#      - DB_HOST=db
+#      - DB_PORT=3306
+#    depends_on:
+#      - db
+#    networks:
+#      - appnetwork
+
+  web:
+    container_name: insurance_management
+    build: .
+    #    command: gunicorn rentalcommunityapi.wsgi:application --bind 0.0.0.0:8000
+    #    build: .
+    command: bash -c "
+      python manage.py makemigrations
+      && python manage.py migrate
+      && gunicorn insurance_management.wsgi:application --bind 0.0.0.0:8000 --workers 3
+      "
+    #      gunicorn billing_subscription_api.wsgi:application --bind  0.0.0.0:8000
+
+    volumes:
+      - static:/static
+    ports:
+      - "8000:8000"
+    environment:
+      - MYSQL_NAME=mysql
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - DB_HOST=db
+      - DB_PORT=3306
+      - CELERY_BROKER_URL = 'redis://redis:6379'
+      - CELERY_RESULT_BACKEND = 'db+mysql://root:root@localhost:3306/mysql'
+    depends_on:
+      - db
+
+  nginx:
+    build: ./nginx
+    volumes:
+      - static:/static
+    ports:
+      - "80:80"
+    depends_on:
+      - web
+
+  redis:
+    image: redis:5.0-alpine
+    hostname: redis
+    volumes:
+      - /var/lib/redis:/var/lib/redis
+    ports:
+      - "6379:6379"
+
+#  celery container
+
+  celery:
+    container_name: celery
+    build: .
+    command: celery -A insurance_management worker -l INFO
+    volumes:
+      - .:/app
+    environment:
+      - MYSQL_NAME=mysql
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - DB_HOST=db
+      - DB_PORT=3306
+    depends_on:
+      - db
+      - redis
+      - web
+
+#  celery-beat container
+
+  celery-beat:
+    container_name: celery_beat
+    build: .
+    command: celery -A insurance_management beat -l INFO
+    volumes:
+      - .:/app
+    environment:
+      - MYSQL_NAME=mysql
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - DB_HOST=db
+      - DB_PORT=3306
+
+    depends_on:
+      - db
+      - redis
+      - web
+
+
+#networks:
+#  appnetwork:
+#    name: application_network
+
+volumes:
+  static:
+
+
+

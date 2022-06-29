@@ -3,6 +3,7 @@ from django.core.exceptions import ValidationError
 from django.shortcuts import render
 
 # Create your views here.
+from oauth2_provider.decorators import protected_resource
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -17,10 +18,14 @@ logger = logging.getLogger('root')
 
 
 @api_view(['POST'])
+@protected_resource(scopes=['user'])
 def create_claim(request):
     """ Create new claim from insurance """
     try:
+        user = request.user
+        employee = Employee.objects.get(user_id=user.id)
         insurance_id = request.data.get("insurance")
+        request.data['employee'] = employee.id
         claimed_amount = request.data.get("claimed_amount")
         remaining_amount = claim_insurance(insurance_id, claimed_amount)
         request.data['remaining_insurance_amount'] = remaining_amount

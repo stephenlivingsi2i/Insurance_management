@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-m5vs#q!(^%x-0lsk52ocf-o@u1bs(y6=@+$l*3e8h%jkvi0j9k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -83,17 +83,30 @@ WSGI_APPLICATION = 'insurance_management.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'insurance_management',
+#         'USER': 'root',
+#         'PASSWORD': 'Sslivings007',
+#         'HOST': 'localhost',
+#         'PORT': '3306'
+#     }
+# }
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'insurance_management',
-        'USER': 'root',
-        'PASSWORD': 'Sslivings007',
-        'HOST': 'localhost',
-        'PORT': '3306'
+        'NAME': os.environ['MYSQL_NAME'],
+        'USER': os.environ['MYSQL_USER'],
+        'PASSWORD': os.environ['MYSQL_PASSWORD'],
+        # 'HOST': '127.0.0.1',
+        'HOST': os.environ['DB_HOST'],
+        'PORT': os.environ['DB_PORT'],
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -140,6 +153,10 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'Asia/Kolkata'
 
+# CELERY_BROKER_URL = os.environ.get("CELERY_BROKER_URL", 'redis://redis:6379')
+# CELERY_RESULT_BACKEND = os.environ.get("CELERY_RESULT_BACKEND", 'db+mysql://root:root@localhost:3306/mysql')
+
+
 CELERY_RESULT_BACKEND = 'db+mysql://root:Sslivings007@localhost:3306/insurance_management'
 CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
 
@@ -148,9 +165,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'subscriptionforyou45@gmail.com'
-EMAIL_HOST_PASSWORD = 'just$for$demo'
-DEFAULT_FROM_EMAIL = 'Celery<subscriptionforyou45@gmail.com>'
+EMAIL_HOST_USER = 'remainderinsurance@gmail.com'
+EMAIL_HOST_PASSWORD = 'pxybbalvzouskocg'
+DEFAULT_FROM_EMAIL = 'Celery<remainderinsurance@gmail.com>'
 
 LOGGING = {
     'version': 1,

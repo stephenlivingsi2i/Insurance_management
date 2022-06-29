@@ -5,6 +5,7 @@ from prompt_toolkit.validation import ValidationError
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
+from employee.models import Employee
 from family.models import Family
 from family.serializer import FamilySerializer
 
@@ -17,6 +18,9 @@ logger = logging.getLogger('root')
 def add_relation(request):
     """Add new relation to the employee and store it to database"""
     try:
+        user = request.user
+        employee = Employee.objects.get(user_id=user.id)
+        request.data['employee'] = employee.id
         new_relation = FamilySerializer(data=request.data)
         new_relation.is_valid(raise_exception=True)
         new_relation.save()

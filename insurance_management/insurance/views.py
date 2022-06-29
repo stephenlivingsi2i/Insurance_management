@@ -16,6 +16,7 @@ from datetime import datetime
 from datetime import timedelta, date
 import uuid
 
+from organization.models import Organization
 
 logger = logging.getLogger('root')
 
@@ -25,6 +26,9 @@ logger = logging.getLogger('root')
 def self_insurance(request):
     """Create new insurance for employee and store it"""
     try:
+        user = request.user
+        employee = Employee.objects.get(user_id=user.id)
+        request.data['employee'] = employee.id
         request.data["remaining_amount"] = request.data["insurance_amount"]
         request.data["renewal_date"] = date.today(). \
             replace(year=date.today().year + 5)
@@ -47,6 +51,9 @@ def self_insurance(request):
 @protected_resource(scopes=['admin'])
 def term_insurance(request):
     try:
+        user = request.user
+        organization = Organization.objects.get(user_id=user.id)
+        request.data['organization'] = organization.id
         request.data["remaining_amount"] = request.data["insurance_amount"]
         request.data["insurance_number"] = request.data["insurance_number"] = \
             "H0000" + str(date.today()).replace("-", "") \
@@ -69,12 +76,15 @@ def term_insurance(request):
 @protected_resource(scopes=['admin'])
 def family_individual_insurance(request):
     try:
+        user = request.user
+        organization = Organization.objects.get(user_id=user.id)
         request.data["remaining_amount"] = request.data["insurance_amount"]
         request.data["insurance_number"] = \
             "H0000" + str(date.today()).replace("-", "") \
             + (str(request.data["employee"]))
         request.data["renewal_date"] = date.today(). \
             replace(year=date.today().year + 5)
+        request.data['organization'] = organization.id
         employee = Employee.objects.get(pk=request.data["employee"])
         request.data['holder_name'] = employee.name
         new_insurance = InsuranceSerializer(data=request.data)
@@ -89,6 +99,7 @@ def family_individual_insurance(request):
             request.data["insurance_number"] = \
                 "H00" + str(date.today()).replace("-", "") \
                 + (str(request.data["employee"]) + (str(member.id)))
+            request.data['organization'] = organization.id
             new_insurance = InsuranceSerializer(data=request.data)
             new_insurance.is_valid(raise_exception=True)
             new_insurance.save()

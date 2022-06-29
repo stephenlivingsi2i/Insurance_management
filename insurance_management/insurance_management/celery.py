@@ -22,7 +22,7 @@ app.config_from_object(settings, namespace="CELERY")
 app.conf.beat_schedule = {
     'trigger_mail_reminder_everyday_at_10_A.M': {
         'task': 'insurance.tasks.remind_insurances',
-        'schedule': crontab(hour=20, minute=37),
+        'schedule': crontab(hour=16, minute=55),
     },
 
 }
